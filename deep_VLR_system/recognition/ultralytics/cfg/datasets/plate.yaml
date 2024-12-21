@@ -1,0 +1,32 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+# download command/URL (optional)
+#download: bash data/scripts/get_voc.sh
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+
+#下面这种有问题(之前有问题是因为yolov10暂时不支持数据集有后面几个点的标签，所以需要将标签文件中的后面几个点去掉)
+train: C:\Users\20467\Desktop\yolov10-main\ultralytics\cfg\datasets\data\train
+val: C:\Users\20467\Desktop\yolov10-main\ultralytics\cfg\datasets\data\val
+# number of classes
+nc: 2
+# class names
+names: [ 'single','double']
+
+#train: C:\Users\20467\Desktop\yolov10-main\ultralytics\cfg\datasets\plateData\CCPD2020\ccpd_green\train
+#val: C:\Users\20467\Desktop\yolov10-main\ultralytics\cfg\datasets\plateData\CCPD2020\ccpd_green\val
+#test: C:\Users\20467\Desktop\yolov10-main\ultralytics\cfg\datasets\plateData\CCPD2020\ccpd_green\test
+## number of classes
+#nc: 1
+## class names
+#names: [ 'plate' ]
+
+#train: data/train_data/challenge
+#val: data/val_detect/challenge
+# number of classes
+#nc: 1
+# class names
+#names: [ 'single']

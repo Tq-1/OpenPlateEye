@@ -1,0 +1,8 @@
+# Train/val
+train: C:\Users\Lenovo\PycharmProjects\datasets\SafetyHelmetWearingDataset\images\train
+val: C:\Users\Lenovo\PycharmProjects\datasets\SafetyHelmetWearingDataset\images\val
+test: # test images
+
+# Classes
+nc: 2  # number of classes
+names: ['helmet','nohelmet']
